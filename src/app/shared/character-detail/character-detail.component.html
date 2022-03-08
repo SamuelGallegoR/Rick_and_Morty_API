@@ -1,0 +1,32 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-label class="ion-text-center"> Character Details </ion-label>
+    <ion-buttons slot="end">
+      <ion-button (click)="close()">
+        <ion-icon slot="icon-only" name="close"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content id="characterdetail">
+  <ion-grid>
+    <ion-row>
+      <ion-col class="logo">
+        <ion-img [src]="character.image" style="width:40%"></ion-img>
+      </ion-col>
+    </ion-row>
+      <ion-col>
+        <h3><b>Name: </b></h3><h5>{{ character.name }}</h5>
+        <h3><b>Origin: </b></h3><h5>{{ character.origin.name }}</h5>
+        <h3><b>ID: </b></h3><h5>{{ character.id }}</h5>
+        <h3><b>Gender: </b></h3><h5>{{ character.gender }}</h5>
+        <h3><b>Status: </b></h3><h5>{{ character.status }}</h5>
+        <h3><b>Species: </b></h3><h5>{{ character.species }}</h5>
+        <h3><b>Last seen on: </b></h3><h5>{{ character.location.name }}</h5>
+      </ion-col>
+    <ion-row>
+
+    </ion-row>
+  </ion-grid>
+</ion-content>
